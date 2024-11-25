@@ -1,8 +1,136 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-
+        <meta charset="UTF-8" >
+        <meta name="description" content="Edwin Khor Website">
+        <meta name="keywords" content="Edwin Khor">
+        <meta name="author" content="Edwin Khor">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Edwin Khor</title>
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" >
+        <link rel="icon" href="Asset 3@4x.png" type="image/png" sizes="32x32">
     </head>
+
     <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+        <div class="container col-11">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="Asset 3@4x.png" alt="Logo" style="height: 40px; margin-right: 10px;"> <!-- Logo with margin -->
+                Edwin Khor
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--Picture-->
+    <section class="picture">
+        <div class="banner">
+            <img src="pic1.jpg" alt="Banner" class="img-fluid w-100 vh-100" style="object-fit: cover;">
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section class="hero bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Edwin Khor</h1>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-8">
+                    <p class="lead">
+                        A Malaysia-based multimedia designer with coding expertise and a passion for creating visually engaging and interactive digital experiences.
+                    </p>
+                </div>
+            </div>
+            <a href="#portfolio" class="btn btn-primary btn-lg mt-3">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Strength -->
+    <section class="features py-5   ">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="text-center text-dark mb-4 fw-bold">Things I Can Do For The Clients</h1>
+            <div class="col-md-4">
+                <div class="mb-5">
+                    <i class="bi bi-lightbulb-fill text-primary fs-1"></i>
+                </div>
+                <h5>Photo Editing</h5>
+                <p>Strong proficiency in photo editing and color grading, ensuring visually stunning outputs.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-5">
+                    <i class="bi bi-code-slash text-primary fs-1"></i>
+                </div>
+                <h5>Clean Code</h5>
+                <p>Skilled in coding to bring multimedia designs to life across web and interactive platforms.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-5">
+                    <i class="bi bi-people-fill text-primary fs-1"></i>
+                </div>
+                <h5>Problem-solver</h5>
+                <p>who thrives on translating complex ideas into functional and creative designs.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-light text-dark py-3" style="text-align: center;">
+        <p>&copy; 2024 EdwinKhor. All Rights Reserved.</p>
+                <a href="https://www.linkedin.com/in/gni-fg-673878330/" class="text-dark me-3" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/edw_i1200/" class="text-dark me-3" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" id="discordLink" class="text-dark me-3" onclick="copyDiscordID(); return false;" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+                <a href="https://www.pixiv.net/en/users/57245580" class="text-dark me-3" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fab fa-pixiv"></i> Pixiv
+                </a>
+                <a href="https://github.com/Jackkeswim" class="text-dark me-3" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:edwin18yu@gmail.com" class="text-dark me" 
+                   target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+    </footer>
+      
 
     </body>
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <script src="copytext.js"></script>
+
 </html>
